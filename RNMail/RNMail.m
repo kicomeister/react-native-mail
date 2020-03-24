@@ -130,7 +130,7 @@ RCT_EXPORT_METHOD(mail:(NSDictionary *)options
             [mail addAttachmentData:fileData mimeType:mimeType fileName:attachmentName];
         }
 
-                if (options[@"attachments"]){
+        if (options[@"attachments"]){
             NSArray *attachments = [RCTConvert NSArray:options[@"attachments"]];
 
             for(NSDictionary *attachment in attachments) {
